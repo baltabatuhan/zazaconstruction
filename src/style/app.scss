@@ -10,3 +10,18 @@ html, body, #root{
   
   
 }
+
+.content{
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+  justify-content:center;
+  
+  h1{
+    font-size:350%;
+    color:#D5EEBB;
+    margin-top:8%;
+    
+  }
+}
+
