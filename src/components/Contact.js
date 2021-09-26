@@ -1,5 +1,9 @@
-import { Layout,Col,Form, Input, Button } from 'antd';
+import { Layout,Col,Form, Input, Button,Card } from 'antd';
 import 'antd/dist/antd.css'
+import FontAwesome from 'react-fontawesome'
+
+
+const {Content} = Layout;
 
 const layout = {
   labelCol: {
@@ -30,14 +34,18 @@ const Contact = () => {
     
       return (
         
-        <Layout className="height-100" style={{paddingTop:"7%",paddingLeft:"35%",backgroundColor:"#ECE7B4"}}>
+        <Layout className="height-100" style={{backgroundColor:"#ECE7B4",flexDirection:"row"}}>
+          <Content className="contact-image" style={{ backgroundImage: 'url(https://i.ibb.co/XFDcYnL/pawel-czerwinski-0x-CCPIbl3-M-unsplash.jpg,)',paddingTop:"5%",paddingLeft:"6%",justifyContent:"flex-start"}}>
+         
             <Col
-                xs={2}
-                sm={18}
-                md={16}
-                lg={8}
+              span={8}
             >
-        <Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages} style={{labelAlign:"left"}}  >
+          
+     
+            
+          
+          
+        <Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages} style={{paddingTop:"3%"}}  >
           <Form.Item
             name={['user', 'name']}
             label="Name"
@@ -70,7 +78,20 @@ const Contact = () => {
             </Button>
           </Form.Item>
         </Form>
+        
         </Col>
+        <Col span={8}>
+          <div className="contact-information" style={{paddingLeft:"55%"}}>
+          <i class="fas fa-phone"></i>
+          <h2>Phone Number:</h2>
+          <p>+1 (213) 292 27 07</p>
+          <h2>E-mail:</h2>
+          <p>zbatuhanbalta@gmail.com</p>
+          <h2>Address:</h2>
+          <p>zbatuhanbalta@gmail.com</p>
+         </div>
+        </Col>
+        </Content>
         </Layout>
        
         
