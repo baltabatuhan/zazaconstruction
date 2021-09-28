@@ -1,6 +1,6 @@
 import { Layout,Col,Form, Input, Button,Card } from 'antd';
 import 'antd/dist/antd.css'
-import FontAwesome from 'react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const {Content} = Layout;
@@ -82,7 +82,7 @@ const Contact = () => {
         </Col>
         <Col span={8}>
           <div className="contact-information" style={{paddingLeft:"55%"}}>
-          <i class="fas fa-phone"></i>
+          <FontAwesomeIcon icon="fa-solid fa-coffee" size="xs" />
           <h2>Phone Number:</h2>
           <p>+1 (213) 292 27 07</p>
           <h2>E-mail:</h2>
