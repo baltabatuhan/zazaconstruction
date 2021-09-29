@@ -1,7 +1,6 @@
-import { Layout } from "antd";
-const { Footer: AntFooter } = Layout;
+
 const Footer = () => {
-  return <AntFooter style={{ justifyContent:"center",textAlign: "center", height: 10,alignItems: "center" , backgroundColor:"#444941",color:"#D5EEBB" }}>Batuhan Balta © 2021</AntFooter>;
+  return <div style={{ justifyContent:"center",textAlign: "center",alignItems: "center" , backgroundColor:"#D6AD60",color:"#B68D40" }}>Batuhan Balta © 2021</div>;
 };
 
 export default Footer;

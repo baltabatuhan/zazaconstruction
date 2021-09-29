@@ -20,8 +20,14 @@ html, body, #root{
   
   h1{
     font-size:350%;
-    color:#D5EEBB;
+    color:#D6AD60;
     margin-top:8%;
+    
+  }
+  h1:hover{
+    
+    color:#D5EEBB;
+    
     
   }
 }
@@ -38,6 +44,56 @@ html, body, #root{
     margin-top:8%;
     
   }
+  label{
+    color:#B68D40;
+
+  }
+
+  button{
+    background-color: #B68D40;
+    border-color: #D6AD60;
+  }
+  button:hover{
+    background-color: #B68D40;
+  }
   
 
+}
+
+.contact-information{
+  h2{
+    color:#B68D40;
+  }
+  h2:hover{
+    color:#D5EEBB ;
+  }
+  p{
+    color:#D6AD60;
+  }
+  p:hover{
+    color:aquamarine;
+  }
+}
+
+.about-us{
+  width: 80%;
+  padding-top: 5%;
+  
+  h2{
+    padding-left: 17%;
+    font-weight: bold;
+    color:#B68D40;
+  }
+  
+  
+
+  .about-text{
+    padding-left: 17%;
+    padding-top: 1%;
+    text-align: left;
+    width: 60%;
+    color:wheat;
+    font-size: 15px;
+    line-height: 2;
+  }
 }

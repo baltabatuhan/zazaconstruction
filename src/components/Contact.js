@@ -1,6 +1,11 @@
-import { Layout,Col,Form, Input, Button,Card } from 'antd';
+import { Layout,Col,Form, Input, Button } from 'antd';
 import 'antd/dist/antd.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  PhoneOutlined,
+  MailOutlined,
+  CompassOutlined
+} from '@ant-design/icons';
+
 
 
 const {Content} = Layout;
@@ -82,13 +87,13 @@ const Contact = () => {
         </Col>
         <Col span={8}>
           <div className="contact-information" style={{paddingLeft:"55%"}}>
-          <FontAwesomeIcon icon="fa-solid fa-coffee" size="xs" />
-          <h2>Phone Number:</h2>
+         
+          <h2>{<PhoneOutlined />} Phone Number:</h2>
           <p>+1 (213) 292 27 07</p>
-          <h2>E-mail:</h2>
+          <h2>{<MailOutlined />} E-mail:</h2>
           <p>zbatuhanbalta@gmail.com</p>
-          <h2>Address:</h2>
-          <p>zbatuhanbalta@gmail.com</p>
+          <h2>{<CompassOutlined />} Address:</h2>
+          <p>4338 Berryman Ave APT 6, Los Angeles, CA 90066</p>
          </div>
         </Col>
         </Content>
