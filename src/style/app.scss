@@ -97,3 +97,24 @@ html, body, #root{
     line-height: 2;
   }
 }
+
+
+.portfolio-content{
+  margin-left: 24%;
+  margin-top: 2%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+  justify-content:space-around;
+  text-align: center;
+  flex-wrap: wrap;
+  .portfolio-images{
+    margin-top:4%;
+    margin-left: 2%;
+  }
+  h1{
+    color: #B68D40;
+  }
+  
+}
