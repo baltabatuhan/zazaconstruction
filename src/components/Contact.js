@@ -47,14 +47,14 @@ const Contact = () => {
 
       const submit = () => {
         if (name && email && message) {
-            const serviceId = 'service_hvqdmkr';
-            const templateId = 'template_1kqjets';
-            const userId = 'user_fqndswXgIr9w1DLZhYIXT';
+            // const serviceId = 'service_hvqdmkr';
+            // const templateId = 'template_1kqjets';
+            // const userId = 'user_fqndswXgIr9w1DLZhYIXT';
            
-            // const serviceId = `${process.env.SERVICE_ID}`;
-            // const templateId = `${process.env.TEMPLATE_ID}`;
-            // console.log(serviceId)
-            // const userId = `${process.env.USER_ID}`;
+            const serviceId = `${process.env.REACT_APP_SERVICE_ID}`;
+            const templateId = `${process.env.REACT_APP_TEMPLATE_ID}`;
+            console.log(serviceId)
+            const userId = `${process.env.REACT_APP_USER_ID}`;
             
             const templateParams = {
                 name,
